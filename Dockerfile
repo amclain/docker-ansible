@@ -12,3 +12,4 @@ RUN easy_install --upgrade setuptools
 RUN wget -O ansible.tar.gz https://github.com/ansible/ansible/archive/v2.1.0.0-1.tar.gz
 RUN tar -xzf ansible.tar.gz
 RUN cd ansible-2.1.0.0-1; make; make install
+RUN rm ansible.tar.gz
